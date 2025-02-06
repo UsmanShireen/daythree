@@ -14,7 +14,7 @@ export default function SignIn() {
     const password = formData.get("password") as string;
 
     if (!email || !password) {
-      setError("You don't have an account.");
+      setError("You don&apos;t have an account.");
       return;
     }
 
@@ -39,6 +39,7 @@ export default function SignIn() {
             <input 
               type="email" 
               id="email" 
+              name="email"
               className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" 
               placeholder="Enter your email" 
               required
@@ -49,6 +50,7 @@ export default function SignIn() {
             <input 
               type="password" 
               id="password" 
+              name="password"
               className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" 
               placeholder="Enter your password" 
               required
@@ -77,7 +79,7 @@ export default function SignIn() {
           </button>
         </div>
         <p className="mt-4 text-sm text-center text-gray-600">
-          Don't have an account? <a href="/SignUp" className="text-blue-500 hover:underline">Sign Up</a>
+          Don&apos;t have an account? <a href="/SignUp" className="text-blue-500 hover:underline">Sign Up</a>
         </p>
       </div>
     </div>
