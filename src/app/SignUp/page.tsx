@@ -1,6 +1,5 @@
 import React from 'react'
 import Navbar from "@/components/Navbar";
-import ShopMenu from '@/components/ShopMenu';
 import Footer from "@/components/Footer";
 import Footerbar from "@/components/Footerbar";
 import SignUp from './signup';

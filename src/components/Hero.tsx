@@ -1,9 +1,9 @@
 import Image from "next/image";
 import { CiSearch } from "react-icons/ci";
-import { PiUserLight, PiTote } from "react-icons/pi";
+import { PiTote } from "react-icons/pi";
 import Link from "next/link";
 
-const Hero = (props: any) => {
+const Hero = () => {
   return (
     <header className="w-full height-[250px]">
       <div className="w-full h-[90px]">

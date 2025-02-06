@@ -1,15 +1,8 @@
-"use client";
-
 import React from "react";
-import Image from "next/image";
-import { PiMagnifyingGlassThin, PiArrowCircleRightBold } from "react-icons/pi";
-import { useState } from "react";
+import { PiMagnifyingGlassThin} from "react-icons/pi";
 import  Foods from '@/app/Products/Foods';
 
-const ShopMenu = ({ totalStars = 5 }) => {
-  const [rating, setRating] = useState(2); // Default 2 stars filled
-  const [price, setPrice] = useState(8000); // Default value for range slider
-
+const ShopMenu = () => {
   return (
     <main className="w-full h-full flex justify-center items-center mt-32 mb-64">
       <div className="grid grid-cols justify-center gap-5 pl-12">
