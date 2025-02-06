@@ -3,7 +3,13 @@ import { CiSearch } from "react-icons/ci";
 import { PiUserLight, PiTote } from "react-icons/pi";
 import Link from "next/link";
 
-const Navbar = (props: any) => {
+interface NavbarProps {
+  text: string;
+  textName: string;
+  name: string;
+}
+
+const Navbar = (props: NavbarProps) => {
   return (
     <header className="w-full height-[250px]">
       <div>
